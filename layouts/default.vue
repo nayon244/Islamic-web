@@ -3,11 +3,17 @@
     <v-app-bar app flat color="blue">
       <v-spacer></v-spacer>
       <span class="white--text">
-        <b>
-          {{ title }}
-        </b>
+        <v-btn
+          @click="goToHome"
+          dark
+          depressed
+          x-large
+          color="blue lighten-1"
+          rounded
+        >
+          <b> {{ title }} </b>
+        </v-btn>
       </span>
-
       <v-spacer></v-spacer>
     </v-app-bar>
     <v-main>
@@ -42,6 +48,11 @@ export default {
       rightDrawer: false,
       title: "আয়তুল কুরসী"
     };
+  },
+  methods: {
+    goToHome() {
+      this.$router.push("/");
+    }
   }
 };
 </script>

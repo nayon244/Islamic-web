@@ -16,7 +16,7 @@ export default {
   methods: {
     cardClicked(event) {
       console.log(event);
-      this.$router.push({ name: "inspire", params: this.data });
+      this.$router.push({ name: "doaData", params: this.data });
       //   this.$router.push("/inspire");
     }
   }
